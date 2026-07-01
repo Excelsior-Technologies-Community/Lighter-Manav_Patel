@@ -1,0 +1,258 @@
+.Building-Section {
+    background-color: #e5e5e8;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    font-family: "Urbanist", sans-serif;
+    padding: 60px 0 150px 0;
+    background-image: url("https://demo.7iquid.com/lighter/wp-content/themes/lighter/assets/images/pixels.png");
+}
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.Building-Content {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.big {
+    font-size: 90px;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+    letter-spacing: -3px;
+    line-height: 1;
+}
+
+.product-editing-area {
+    position: relative;
+    display: inline-block;
+    transform: rotate(-3deg);
+    transform-origin: left center;
+    margin-top: 15px;
+}
+
+.selection-box {
+    border: 4.5px solid #7a9cff;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.Product-big {
+    font-size: 80px;
+    font-weight: 500;
+    margin: 0;
+    padding: 5px 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    letter-spacing: -2px;
+    background: linear-gradient(90deg, #7363DF 0%, #B571EA 100%);
+    box-shadow: 0 2px 6px 0 rgba(121, 105, 225, 0.30), 24px 24px 24px 0 rgba(104, 130, 225, 0.20), 0 0 16px 0 #FFF inset;
+    background-clip: text;
+    color: transparent;
+}
+
+.node {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: #7a9cff;
+}
+
+.node.top-left {
+    top: -8px;
+    left: -8px;
+}
+
+.node.top-right {
+    top: -8px;
+    right: -8px;
+}
+
+.node.bottom-left {
+    bottom: -8px;
+    left: -8px;
+}
+
+.node.bottom-right {
+    bottom: -8px;
+    right: -8px;
+}
+
+.cursor-img {
+    position: absolute;
+    bottom: -45px;
+    right: -15px;
+    width: 25px;
+    z-index: 10;
+}
+
+.creative {
+    position: absolute;
+    bottom: -55px;
+    right: -130px;
+    width: 110px;
+    z-index: 5;
+}
+.background-img {
+    position: absolute;
+    bottom: -400px;
+    left: -30px;
+    width: 110%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.background-img > img { width: 100%; object-fit: contain; }
+.float-icon-1 {
+    position: absolute;
+    width: 65px;
+    top: 25%;
+    left: 20%;
+}
+
+.float-icon-2 {
+    position: absolute;
+    width: 65px;
+    top: 15%;
+    left: 45%;
+}
+.float-icon-1 img, .float-icon-2 img { width: 100%; display: block; }
+.hero-right-content {
+    flex: 0 0 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 30px;
+}
+.building-rating {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 15px;
+    row-gap: 4px;
+    align-items: center;
+}
+.rating-img {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.rating-img img {
+    height: 28px;
+    display: block;
+}
+.rating-start {
+    grid-column: 2;
+    grid-row: 1;
+    color: #111;
+    font-size: 11px;
+    display: flex;
+    gap: 3px;
+    align-self: end;
+}
+
+.review {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 11px;
+    color: #666;
+    letter-spacing: 0.5px;
+    align-self: start;
+}
+
+.review span {
+    font-weight: 600;
+    color: #111;
+}
+
+.hero-description {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    font-size: 15px;
+    color: #444;
+    line-height: 1.5;
+    margin: 15px 0 0 0;
+}
+
+.video-wrapper {
+    width: 100%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 6px;
+    background: #ffffff;
+}
+
+.video-wrapper video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.Mission-section{
+    background-color: #f7f7fa;
+    padding: 120px 0;
+    font-family: "Urbanist", sans-serif;
+}
+.Mission-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    gap: 80px;
+}
+.mission-one{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+}
+.mission-button .text-start {
+    text-align: left;
+}
+.mission-btn{
+    background: #ffff;
+    border: 1.5px solid #eaeaef;
+    border-radius: 30px;
+    padding: 8px 20px;
+    font-family: "Urbanist", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #111;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+   box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+.mission-heading{
+    text-align: left !important;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+.mission-heading h2{
+    font-size: 40px;
+    font-weight: 400;
+    color: #111;
+    margin: 0;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+}
