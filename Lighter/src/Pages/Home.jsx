@@ -1,4 +1,9 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/effect-fade';
 import './Home.css';
 
 const Home = () => {
@@ -87,94 +92,240 @@ const Home = () => {
                     </div>
                     <div className="mission-two">
                         <div className="mission-card">
-                            <div className="card-background">
-                                <img src='https://demo.7iquid.com/lighter/wp-content/themes/lighter/assets/images/pixels.png' alt="Card Background" />
-                                <div className="mission-uppar">
-                                    <div className="mission-icon">
-                                        <i class="fa-solid fa-paintbrush"></i>
-                                    </div>
-                                    <div className="mission-text">
-                                        Define. Design.<br />
-                                        Distinguish.
-                                    </div>
+                            <div className="mission-uppar">
+                                <div className="mission-icon">
+                                    <i class="fa-solid fa-paintbrush"></i>
                                 </div>
-                                <div className="main-text">
-                                    <h1>Branding & <br />
-                                        Strategy</h1>
+                                <div className="mission-text">
+                                    Define. Design.<br />
+                                    Distinguish.
                                 </div>
-                                <div className="big-number">
-                                    <h1>01.</h1>
-                                </div>
+                            </div>
+                            <div className="main-text">
+                                <h1>Branding & <br />
+                                    Strategy</h1>
+                            </div>
+                            <div className="big-number">
+                                <h1>01.</h1>
                             </div>
                         </div>
                         <div className="mission-card">
-                            <div className="card-background">
-                                <img src='https://demo.7iquid.com/lighter/wp-content/themes/lighter/assets/images/pixels.png' alt="Card Background" />
-                                <div className="mission-uppar">
-                                    <div className="mission-icon">
-                                        <i class="fa-solid fa-desktop"></i>
-                                    </div>
-                                    <div className="mission-text">
-                                        Intuitive. Engaging.<br />
-                                        Seamless.
-                                    </div>
+                            <div className="mission-uppar">
+                                <div className="mission-icon">
+                                    <i class="fa-solid fa-desktop"></i>
                                 </div>
-                                <div className="main-text">
-                                    <h1>UI/UX <br />
-                                        Design</h1>
+                                <div className="mission-text">
+                                    Intuitive. Engaging.<br />
+                                    Seamless.
                                 </div>
-                                <div className="big-number">
-                                    <h1>02.</h1>
-                                </div>
+                            </div>
+                            <div className="main-text">
+                                <h1>UI/UX <br />
+                                    Design</h1>
+                            </div>
+                            <div className="big-number">
+                                <h1>02.</h1>
                             </div>
                         </div>
                         <div className="mission-card">
-                            <div className="card-background">
-                                <img src='https://demo.7iquid.com/lighter/wp-content/themes/lighter/assets/images/pixels.png' alt="Card Background" />
-                                <div className="mission-uppar">
-                                    <div className="mission-icon">
-                                        <i class="fa-regular fa-lightbulb"></i>
-                                    </div>
-                                    <div className="mission-text">
-                                        Vision. Style.<br />
-                                        Impact.
-                                    </div>
+                            <div className="mission-uppar">
+                                <div className="mission-icon">
+                                    <i class="fa-regular fa-lightbulb"></i>
                                 </div>
-                                <div className="main-text">
-                                    <h1>Creative <br />
-                                        Direction</h1>
+                                <div className="mission-text">
+                                    Vision. Style.<br />
+                                    Impact.
                                 </div>
-                                <div className="big-number">
-                                    <h1>03.</h1>
-                                </div>
+                            </div>
+                            <div className="main-text">
+                                <h1>Creative <br />
+                                    Direction</h1>
+                            </div>
+                            <div className="big-number">
+                                <h1>03.</h1>
                             </div>
                         </div>
                         <div className="mission-card">
-                            <div className="card-background">
-                                <img src='https://demo.7iquid.com/lighter/wp-content/themes/lighter/assets/images/pixels.png' alt="Card Background" />
-                                <div className="mission-uppar">
-                                    <div className="mission-icon">
-                                        <i class="fa-solid fa-earth-asia"></i>
-                                    </div>
-                                    <div className="mission-text">
-                                        Beautiful. Functional.<br />
-                                        Fast.
-                                    </div>
+                            <div className="mission-uppar">
+                                <div className="mission-icon">
+                                    <i class="fa-solid fa-earth-asia"></i>
                                 </div>
-                                <div className="main-text">
-                                    <h1>Web<br />
-                                        Development</h1>
+                                <div className="mission-text">
+                                    Beautiful. Functional.<br />
+                                    Fast.
                                 </div>
-                                <div className="big-number">
-                                    <h1>04.</h1>
-                                </div>
+                            </div>
+                            <div className="main-text">
+                                <h1>Web<br />
+                                    Development</h1>
+                            </div>
+                            <div className="big-number">
+                                <h1>04.</h1>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-
+            <section className="portfolio-section">
+                <div className="portfolio-container">
+                    <div className="section-btn-wrapper">
+                        <button className="section-btn">
+                            <span className="dot"></span> Our Works
+                        </button>
+                    </div>
+                    <Swiper
+                        modules={[Navigation]}
+                        navigation={true}
+                        effect="fade"
+                        speed={800}
+                        loop={true}
+                        className="portfolio-swiper"
+                    >
+                        <SwiperSlide>
+                            <div className="swiper-card">
+                                <div className="swiper-img-wrapper">
+                                    <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/Horizon-Finance-Rebrand-rlepr0g0cj26atggcx484i6v5a5q8uchkoxoy4kisg.avif" alt="Horizon Finance Rebrand" />
+                                </div>
+                                <div className="swiper-info-panel">
+                                    <div className="info-col heading-col">
+                                        <h3>Horizon Finance<br />Rebrand</h3>
+                                    </div>
+                                    <div className="info-col">
+                                        <span className="label">Published Date</span>
+                                        <p>December 2025</p>
+                                    </div>
+                                    <div className="info-col">
+                                        <span className="label">Industry</span>
+                                        <p>Fintech</p>
+                                    </div>
+                                    <div className="info-col services-col">
+                                        <span className="label">Services</span>
+                                        <p>Brand Identity, Creative Direction</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="swiper-card">
+                                <div className="swiper-img-wrapper">
+                                    <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/Luma-Health-App-2-rlepr0g0cj26atggcx484i6v5a5q8uchkoxoy4kisg.avif" alt="Luma Health App" />
+                                </div>
+                                <div className="swiper-info-panel">
+                                    <div className="info-col heading-col">
+                                        <h3>Luma Health App</h3>
+                                    </div>
+                                    <div className="info-col">
+                                        <span className="label">Published Date</span>
+                                        <p>November 2025</p>
+                                    </div>
+                                    <div className="info-col">
+                                        <span className="label">Industry</span>
+                                        <p>Creative Agency</p>
+                                    </div>
+                                    <div className="info-col services-col">
+                                        <span className="label">Services</span>
+                                        <p>Web Design & Development</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="swiper-card">
+                                <div className="swiper-img-wrapper">
+                                    <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/Northland-Studio-Website-rlepr0g0cj26atggcx484i6v5a5q8uchkoxoy4kisg.avif" alt="Northland Studio Website" />
+                                </div>
+                                <div className="swiper-info-panel">
+                                    <div className="info-col heading-col">
+                                        <h3>Northland Studio<br />Website</h3>
+                                    </div>
+                                    <div className="info-col">
+                                        <span className="label">Published Date</span>
+                                        <p>December 2025</p>
+                                    </div>
+                                    <div className="info-col">
+                                        <span className="label">Industry</span>
+                                        <p>Creative Agency</p>
+                                    </div>
+                                    <div className="info-col services-col">
+                                        <span className="label">Services</span>
+                                        <p>Web Design & Development</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
+            </section>
+            <section className="design-excellence-section">
+                <div className="container">
+                    <div className="section-btn-wrapper">
+                        <button className="section-btn">
+                            <span className="dot"></span> Awards
+                        </button>
+                    </div>
+                    <div className="design-heading">
+                        <h2>Recognized for Design<br />Excellence</h2>
+                    </div>
+                    <div className="design-content">
+                        <div className="award-row">
+                            <div className="award-name">
+                                <p>The Webby Awards</p>
+                            </div>
+                            <div className="award-detail">
+                                <p>Honoree — Best Visual Design</p>
+                            </div>
+                            <div className="award-date">
+                                <p>May 2025</p>
+                            </div>
+                        </div>
+                        <div className="award-row">
+                            <div className="award-name">
+                                <p>Awwwards</p>
+                            </div>
+                            <div className="award-detail">
+                                <p>Site of the Day — Northland Studio Website</p>
+                            </div>
+                            <div className="award-date">
+                                <p>February 2025</p>
+                            </div>
+                        </div>
+                        <div className="award-row">
+                            <div className="award-name">
+                                <p>Communication Arts</p>
+                            </div>
+                            <div className="award-detail">
+                                <p>Selected for the 2025 Design Annual</p>
+                            </div>
+                            <div className="award-date">
+                                <p>January 2025</p>
+                            </div>
+                        </div>
+                        <div className="award-row">
+                            <div className="award-name">
+                                <p>CSS Design Awards</p>
+                            </div>
+                            <div className="award-detail">
+                                <p>Website of the Day — Luma Health App</p>
+                            </div>
+                            <div className="award-date">
+                                <p>November 2024</p>
+                            </div>
+                        </div>
+                        <div className="award-row">
+                            <div className="award-name">
+                                <p>Behance</p>
+                            </div>
+                            <div className="award-detail">
+                                <p>Featured Project — Luma Health App UI/UX</p>
+                            </div>
+                            <div className="award-date">
+                                <p>August 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
     );
 };
