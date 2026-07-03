@@ -78,23 +78,25 @@ const Home = () => {
                         <div className="mission-button text-start">
                             <button className="mission-btn">Our Services</button>
                         </div>
-                        <div className="mission-heading text-end">
+                        <div className="mission-heading text-start">
                             <h2>Our mission is to shape meaningful <br />brands and experiences</h2>
-                            <div className="small-img">
-                                <img src="https://demo.7iquid.com/lighter/wp-content/uploads/2025/12/Group-110.png" alt="Small" />
+                            <div className="heading-inline">
+                                <div className="small-img">
+                                    <img src="https://demo.7iquid.com/lighter/wp-content/uploads/2025/12/Group-110.png" alt="Small" />
+                                </div>
+                                <h2>that</h2>
                             </div>
-                            <h2>that<br />
-                                make an impact.</h2>
-                            <div className="header-btn">
-                                <button>Start a Project</button>
-                            </div>
+                            <h2>make an impact.</h2>
+                        </div>
+                        <div className="header-btn">
+                            <button>Start a Project</button>
                         </div>
                     </div>
                     <div className="mission-two">
                         <div className="mission-card">
                             <div className="mission-uppar">
                                 <div className="mission-icon">
-                                    <i class="fa-solid fa-paintbrush"></i>
+                                    <i className="fa-solid fa-paintbrush"></i>
                                 </div>
                                 <div className="mission-text">
                                     Define. Design.<br />
@@ -112,7 +114,7 @@ const Home = () => {
                         <div className="mission-card">
                             <div className="mission-uppar">
                                 <div className="mission-icon">
-                                    <i class="fa-solid fa-desktop"></i>
+                                    <i className="fa-solid fa-desktop"></i>
                                 </div>
                                 <div className="mission-text">
                                     Intuitive. Engaging.<br />
@@ -130,7 +132,7 @@ const Home = () => {
                         <div className="mission-card">
                             <div className="mission-uppar">
                                 <div className="mission-icon">
-                                    <i class="fa-regular fa-lightbulb"></i>
+                                    <i className="fa-regular fa-lightbulb"></i>
                                 </div>
                                 <div className="mission-text">
                                     Vision. Style.<br />
@@ -148,7 +150,7 @@ const Home = () => {
                         <div className="mission-card">
                             <div className="mission-uppar">
                                 <div className="mission-icon">
-                                    <i class="fa-solid fa-earth-asia"></i>
+                                    <i className="fa-solid fa-earth-asia"></i>
                                 </div>
                                 <div className="mission-text">
                                     Beautiful. Functional.<br />
@@ -323,6 +325,50 @@ const Home = () => {
                                 <p>August 2024</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="diagonal-gallery-section">
+                <div className="gallery-tilt-wrapper">
+                    <div className="gallery-column scroll-up">
+
+                        <div className="gallery-item tall"><img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/Horizon-Finance-Rebrand-rlepr0fvbeppkmrv8coh3zgkf5aj6h5g1l6owhc1oo.avif" alt="App" /></div>
+                        <div className="gallery-item"><img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/showcaseImage02-rlepr0fvbeppkmrv8coh3zgkf5aj6h5g1l6owhc1oo.avif" alt="Mockup" /></div>
+                        <div className="gallery-item tall"><img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/showcaseIamge-rlepr0fvbeppkmrv8coh3zgkf5aj6h5g1l6owhc1oo.avif" alt="Design" /></div>
+
+                        <div className="gallery-item tall"><img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/Beyond-the-Grid-Creative-Layouts-That-Still-Convert-rlepr0fvbeppkmrv8coh3zgkf5aj6h5g1l6owhc1oo.avif" alt="App" /></div>
+                        <div className="gallery-item"><img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/Northland-Studio-Website-rlepr0fvbeppkmrv8coh3zgkf5aj6h5g1l6owhc1oo.avif" alt="Mockup" /></div>
+                        <div className="gallery-item tall"><img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/Luma-Health-App-2-rlepr0fvbeppkmrv8coh3zgkf5aj6h5g1l6owhc1oo.avif" alt="Design" /></div>
+                    </div>
+                    <div className="gallery-column scroll-down">
+
+                        <div className="gallery-item"><img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/showcaseImage02-rlepr0fvbeppkmrv8coh3zgkf5aj6h5g1l6owhc1oo.avif" alt="Phone" /></div>
+                        <div className="gallery-item tall"><img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/showcaseIamge-rlepr0fvbeppkmrv8coh3zgkf5aj6h5g1l6owhc1oo.avif" alt="Horizon" /></div>
+                        <div className="gallery-item"><img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/Northland-Studio-Website-rlepr0fvbeppkmrv8coh3zgkf5aj6h5g1l6owhc1oo.avif" alt="UI" /></div>
+
+                        <div className="gallery-item"><img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/Horizon-Finance-Rebrand-rlepr0fvbeppkmrv8coh3zgkf5aj6h5g1l6owhc1oo.avif" alt="Phone" /></div>
+                        <div className="gallery-item tall"><img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/Beyond-the-Grid-Creative-Layouts-That-Still-Convert-rlepr0fvbeppkmrv8coh3zgkf5aj6h5g1l6owhc1oo.avif" alt="Horizon" /></div>
+                        <div className="gallery-item"><img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/Luma-Health-App-2-rlepr0fvbeppkmrv8coh3zgkf5aj6h5g1l6owhc1oo.avif" alt="UI" /></div>
+                    </div>
+                    <div className="gallery-column scroll-up">
+
+                        <div className="gallery-item tall"><img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/Luma-Health-App-2-rlepr0fvbeppkmrv8coh3zgkf5aj6h5g1l6owhc1oo.avif" alt="Northland" /></div>
+                        <div className="gallery-item"><img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/Northland-Studio-Website-rlepr0fvbeppkmrv8coh3zgkf5aj6h5g1l6owhc1oo.avif" alt="Creative" /></div>
+                        <div className="gallery-item tall"><img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/Beyond-the-Grid-Creative-Layouts-That-Still-Convert-rlepr0fvbeppkmrv8coh3zgkf5aj6h5g1l6owhc1oo.avif" alt="Device" /></div>
+
+                        <div className="gallery-item tall"><img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/Horizon-Finance-Rebrand-rlepr0fvbeppkmrv8coh3zgkf5aj6h5g1l6owhc1oo.avif" alt="Northland" /></div>
+                        <div className="gallery-item"><img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/showcaseImage02-rlepr0fvbeppkmrv8coh3zgkf5aj6h5g1l6owhc1oo.avif" alt="Creative" /></div>
+                        <div className="gallery-item tall"><img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/showcaseIamge-rlepr0fvbeppkmrv8coh3zgkf5aj6h5g1l6owhc1oo.avif" alt="Device" /></div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="Team-members-section">
+                <div className="member-container"><div className="section-btn-wrapper">
+                        <button className="section-btn text-start">
+                            <span className="dot"></span> Team Members
+                        </button>
                     </div>
                 </div>
             </section>
