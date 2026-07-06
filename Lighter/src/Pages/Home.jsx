@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
@@ -365,13 +365,294 @@ const Home = () => {
             </section>
 
             <section className="Team-members-section">
-                <div className="member-container"><div className="section-btn-wrapper">
+                <div className="member-container">
+                    <div className="section-btn-wrapper">
                         <button className="section-btn text-start">
                             <span className="dot"></span> Team Members
                         </button>
+
+                        <div className="sec-card">
+                            <Swiper
+                                modules={[Navigation, EffectFade]}
+                                effect="fade"
+                                speed={800}
+                                loop={true}
+                                className="Number-swiper text-center"
+                            >
+                                <SwiperSlide>
+                                    <div className="Number-card">
+                                        <div className="Big-number">
+                                            <h1>120+</h1>
+                                        </div>
+                                        <div className="Number-text">
+                                            <p>Brands transformed through strategy and design</p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="Number-card">
+                                        <div className="Big-number">
+                                            <h1>100+</h1>
+                                        </div>
+                                        <div className="Number-text">
+                                            <p>Brands elevated through strategic thinking and creative design</p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="Number-card">
+                                        <div className="Big-number">
+                                            <h1>20+</h1>
+                                        </div>
+                                        <div className="Number-text">
+                                            <p>Successful brand transformations through strategy & creativity</p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                            </Swiper>
+                            <div className="card-img text-end">
+                                <img src="https://demo.7iquid.com/lighter/wp-content/uploads/2025/12/Social-proof.png" alt="Team" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="member-card-section">
+                        <div className="mem-card">
+                            <h5 className="mem-heading">CREATIVE</h5>
+                            <div className="mem-img">
+                                <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/teamMember-rlepr0frtjlv8fkw9opua2adqd8hqtc4uv73mijtzc.png" alt="Creative" />
+                            </div>
+                            <div className="mem-name">
+                                <h4>Ava Mitchell</h4>
+                            </div>
+                            <h5 className="mem-pro">Creative Director</h5>
+                            <h6 className="mem-use">@avamt</h6>
+                        </div>
+                        <div className="mem-card">
+                            <h5 className="mem-heading">DESIGN</h5>
+                            <div className="mem-img">
+                                <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/teamMember02-rlepr0frtjlv8fkw9opua2adqd8hqtc4uv73mijtzc.png" alt="Design" />
+                            </div>
+                            <div className="mem-name">
+                                <h4>Daniel Reyes</h4>
+                            </div>
+                            <h5 className="mem-pro">UI/UX Designer</h5>
+                            <h6 className="mem-use">@dreyes</h6>
+                        </div>
+                        <div className="mem-card">
+                            <h5 className="mem-heading">STRATEGY</h5>
+                            <div className="mem-img">
+                                <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/teamMember03-rlepr0frtjlv8fkw9opua2adqd8hqtc4uv73mijtzc.png" alt="Strategy" />
+                            </div>
+                            <div className="mem-name">
+                                <h4>Mia Chen</h4>
+                            </div>
+                            <h5 className="mem-pro">Brand Strategist</h5>
+                            <h6 className="mem-use">@miamia</h6>
+                        </div>
+                        <div className="mem-card">
+                            <h5 className="mem-heading">DEVELOPMENT</h5>
+                            <div className="mem-img">
+                                <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/teammember05-rlepr0frtjlv8fkw9opua2adqd8hqtc4uv73mijtzc.png" alt="Development" />
+                            </div>
+                            <div className="mem-name">
+                                <h4>Lucas Nguyen</h4>
+                            </div>
+                            <h5 className="mem-pro">Front-End Developer</h5>
+                            <h6 className="mem-use">@lucasng</h6>
+                        </div>
+                        <div className="mem-card">
+                            <h5 className="mem-heading">MANAGER</h5>
+                            <div className="mem-img">
+                                <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/teamMember06-rlepr0frtjlv8fkw9opua2adqd8hqtc4uv73mijtzc.png" alt="Manager" />
+                            </div>
+                            <div className="mem-name">
+                                <h4>Sofia Ramirez</h4>
+                            </div>
+                            <h5 className="mem-pro">Operations Manager</h5>
+                            <h6 className="mem-use">@rsofi</h6>
+                        </div>
                     </div>
                 </div>
             </section>
+            <section className="process-section">
+                <div className="process-container">
+                    <div className="process-header">
+                        <div className="section-btn-wrapper">
+                            <button className="section-btn">
+                                <span className="dot"></span> Process
+                            </button>
+                        </div>
+                        <div className="process-heading">
+                            <h2>For Your <br />Next Projects</h2>
+                        </div>
+                    </div>
+                    <div className="process-grid">
+                        <div className="process-card">
+                            <div className="card-content-top">
+                                <div className="card-icon">
+                                    <i className="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div className="card-title">
+                                    <h3>Discover <br /><span>& Define</span></h3>
+                                </div>
+                            </div>
+
+                            <div className="card-desc">
+                                <p>We start by understanding your goals, audience, and market landscape to build a solid strategic foundation.</p>
+                            </div>
+
+                            <div className="card-bg-number">
+                                <h1>01.</h1>
+                            </div>
+                        </div>
+                        <div className="process-card">
+                            <div className="card-content-top">
+                                <div className="card-icon">
+                                    <i className="fa-solid fa-pen"></i>
+                                </div>
+                                <div className="card-title">
+                                    <h3>Design <br /><span>& Develop</span></h3>
+                                </div>
+                            </div>
+
+                            <div className="card-desc">
+                                <p>We create intuitive, engaging designs and build robust, scalable solutions tailored to your specific needs.</p>
+                            </div>
+
+                            <div className="card-bg-number">
+                                <h1>02.</h1>
+                            </div>
+                        </div>
+                        <div className="process-card">
+                            <div className="card-content-top">
+                                <div className="card-icon">
+                                    <i className="fa-solid fa-desktop"></i>
+                                </div>
+                                <div className="card-title">
+                                    <h3>Deliver <br /><span>& Elevate</span></h3>
+                                </div>
+                            </div>
+
+                            <div className="card-desc">
+                                <p>We bring your vision to life across all touchpoints. After launch, we refine and optimize to ensure your brand continues to grow and shine.</p>
+                            </div>
+
+                            <div className="card-bg-number">
+                                <h1>03.</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="working-section">
+                <div className="working-container">
+                    <button className="section-btn text-center">
+                        <span className="dot"></span>Testimonials
+                    </button>
+                    <div className="thr-card">
+                        <Swiper
+                            modules={[Navigation, EffectFade]}
+                            effect="fade"
+                            speed={800}
+                            loop={true}
+                            className="Working-swiper text-center"
+                        >
+                            <SwiperSlide>
+                                <div className="Working-card">
+                                    <div className="working-upper">
+                                        <div className="work-text">
+                                            <h3>"Working with Lighter completely transformed<br />
+                                                our brand presence. Their team understood<br />
+                                                our vision and turned it into something<br />
+                                                powerful."</h3>
+                                        </div>
+                                    </div>
+                                    <div className="work-icon">
+                                        <i class="fa-solid fa-quote-right"></i>
+                                    </div>
+                                </div>
+                                <div className="work-bottom">
+                                    <div className="work-info">
+                                        <div className="work-img-one">
+                                            <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/reviewerAvatar01-rlepr0forwms7f6k8ejwzv6h50pf3fau5dq690crwk.avif" alt="Ava Mitchell" />
+                                        </div>
+                                        <div className="work-name">
+                                            <p>Olivia Hart</p>
+                                        </div>
+                                        <div className="work-pro">
+                                            <p>Verde Coffee Co.</p>
+                                        </div>
+                                    </div>
+                                    <div className="work-img-two">
+                                        <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/Frame-4-rlepr0fnt9d5yen7kmt6dx0njyuus2ydon0veuok34.png" alt="Daniel Reyes" />
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="Working-card">
+                                    <div className="working-upper">
+                                        <div className="work-text">
+                                            <h3>"He instantly understood our product vision<br />
+                                                and turned it into a clean, functional design<br />
+                                                that truly speaks to our users"</h3>
+                                        </div>
+                                    </div>
+                                    <div className="work-icon">
+                                        <i class="fa-solid fa-quote-right"></i>
+                                    </div>
+                                </div>
+                                <div className="work-bottom">
+                                    <div className="work-info">
+                                        <div className="work-img-one">
+                                            <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/testimonialImage01-rlepr0forwms7f6k8ejwzv6h50pf3fau5dq690crwk.avif" alt="Ava Mitchell" />
+                                        </div>
+                                        <div className="work-name">
+                                            <p>Michael Brooks</p>
+                                        </div>
+                                        <div className="work-pro">
+                                            <p>Founder, Horizon Studio</p>
+                                        </div>
+                                    </div>
+                                    <div className="work-img-two">
+                                        <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/Frame-4-rlepr0fnt9d5yen7kmt6dx0njyuus2ydon0veuok34.png" alt="Daniel Reyes" />
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="Working-card">
+                                    <div className="working-upper">
+                                        <div className="work-text">
+                                            <h3>"From concept to final design, David was<br />
+                                                thoughtful, fast, and precise. His work elevated<br />
+                                                our online presence and set a new standard for<br />
+                                                our marketing team."</h3>
+                                        </div>
+                                    </div>
+                                    <div className="work-icon">
+                                        <i class="fa-solid fa-quote-right"></i>
+                                    </div>
+                                </div>
+                                <div className="work-bottom">
+                                    <div className="work-info">
+                                        <div className="work-img-one">
+                                            <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/testimonialImage02-rlepr0forwms7f6k8ejwzv6h50pf3fau5dq690crwk.avif" alt="Ava Mitchell" />
+                                        </div>
+                                        <div className="work-name">
+                                            <p>Lena Park</p>
+                                        </div>
+                                        <div className="work-pro">
+                                            <p>Marketing Director, NovaWear</p>
+                                        </div>
+                                    </div>
+                                    <div className="work-img-two">
+                                        <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/Frame-4-rlepr0fnt9d5yen7kmt6dx0njyuus2ydon0veuok34.png" alt="Daniel Reyes" />
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                        </Swiper>
+                    </div>
+                </div>
+            </section >
         </>
     );
 };
