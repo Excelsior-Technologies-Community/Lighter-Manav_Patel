@@ -364,116 +364,117 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="Team-members-section">
-                <div className="member-container">
-                    <div className="section-btn-wrapper">
-                        <button className="section-btn text-start">
+           <section className="team-section">
+            <div className="team-container">
+                <div className="team-top-row">
+                    <div className="team-badge-wrapper">
+                        <button className="team-badge-btn">
                             <span className="dot"></span> Team Members
                         </button>
+                    </div>
+                    <div className="team-slider-wrapper">
+                        <Swiper
+                            modules={[Navigation, EffectFade]}
+                            effect="fade"
+                            speed={800}
+                            loop={true}
+                            navigation={{
+                                nextEl: '.slider-next',
+                                prevEl: '.slider-prev',
+                            }}
+                            className="stats-swiper"
+                        >
+                            <SwiperSlide>
+                                <div className="stats-content">
+                                    <h1 className="stats-number">120+</h1>
+                                    <p className="stats-text">Brands transformed through strategy and design</p>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="stats-content">
+                                    <h1 className="stats-number">100+</h1>
+                                    <p className="stats-text">Brands elevated through strategic thinking and creative design</p>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="stats-content">
+                                    <h1 className="stats-number">20+</h1>
+                                    <p className="stats-text">Successful brand transformations through strategy & creativity</p>
+                                </div>
+                            </SwiperSlide>
+                        </Swiper>
 
-                        <div className="sec-card">
-                            <Swiper
-                                modules={[Navigation, EffectFade]}
-                                effect="fade"
-                                speed={800}
-                                loop={true}
-                                className="Number-swiper text-center"
-                            >
-                                <SwiperSlide>
-                                    <div className="Number-card">
-                                        <div className="Big-number">
-                                            <h1>120+</h1>
-                                        </div>
-                                        <div className="Number-text">
-                                            <p>Brands transformed through strategy and design</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="Number-card">
-                                        <div className="Big-number">
-                                            <h1>100+</h1>
-                                        </div>
-                                        <div className="Number-text">
-                                            <p>Brands elevated through strategic thinking and creative design</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="Number-card">
-                                        <div className="Big-number">
-                                            <h1>20+</h1>
-                                        </div>
-                                        <div className="Number-text">
-                                            <p>Successful brand transformations through strategy & creativity</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                            </Swiper>
-                            <div className="card-img text-end">
-                                <img src="https://demo.7iquid.com/lighter/wp-content/uploads/2025/12/Social-proof.png" alt="Team" />
+                        <div className="slider-controls">
+                            <div className="slider-progress"></div>
+                            <div className="slider-arrows">
+                                <button className="slider-prev">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                                </button>
+                                <button className="slider-next">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div className="member-card-section">
-                        <div className="mem-card">
-                            <h5 className="mem-heading">CREATIVE</h5>
-                            <div className="mem-img">
-                                <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/teamMember-rlepr0frtjlv8fkw9opua2adqd8hqtc4uv73mijtzc.png" alt="Creative" />
-                            </div>
-                            <div className="mem-name">
-                                <h4>Ava Mitchell</h4>
-                            </div>
-                            <h5 className="mem-pro">Creative Director</h5>
-                            <h6 className="mem-use">@avamt</h6>
-                        </div>
-                        <div className="mem-card">
-                            <h5 className="mem-heading">DESIGN</h5>
-                            <div className="mem-img">
-                                <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/teamMember02-rlepr0frtjlv8fkw9opua2adqd8hqtc4uv73mijtzc.png" alt="Design" />
-                            </div>
-                            <div className="mem-name">
-                                <h4>Daniel Reyes</h4>
-                            </div>
-                            <h5 className="mem-pro">UI/UX Designer</h5>
-                            <h6 className="mem-use">@dreyes</h6>
-                        </div>
-                        <div className="mem-card">
-                            <h5 className="mem-heading">STRATEGY</h5>
-                            <div className="mem-img">
-                                <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/teamMember03-rlepr0frtjlv8fkw9opua2adqd8hqtc4uv73mijtzc.png" alt="Strategy" />
-                            </div>
-                            <div className="mem-name">
-                                <h4>Mia Chen</h4>
-                            </div>
-                            <h5 className="mem-pro">Brand Strategist</h5>
-                            <h6 className="mem-use">@miamia</h6>
-                        </div>
-                        <div className="mem-card">
-                            <h5 className="mem-heading">DEVELOPMENT</h5>
-                            <div className="mem-img">
-                                <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/teammember05-rlepr0frtjlv8fkw9opua2adqd8hqtc4uv73mijtzc.png" alt="Development" />
-                            </div>
-                            <div className="mem-name">
-                                <h4>Lucas Nguyen</h4>
-                            </div>
-                            <h5 className="mem-pro">Front-End Developer</h5>
-                            <h6 className="mem-use">@lucasng</h6>
-                        </div>
-                        <div className="mem-card">
-                            <h5 className="mem-heading">MANAGER</h5>
-                            <div className="mem-img">
-                                <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/teamMember06-rlepr0frtjlv8fkw9opua2adqd8hqtc4uv73mijtzc.png" alt="Manager" />
-                            </div>
-                            <div className="mem-name">
-                                <h4>Sofia Ramirez</h4>
-                            </div>
-                            <h5 className="mem-pro">Operations Manager</h5>
-                            <h6 className="mem-use">@rsofi</h6>
-                        </div>
+
+                    <div className="team-clutch-wrapper">
+                        <img src="https://demo.7iquid.com/lighter/wp-content/uploads/2025/12/Social-proof.png" alt="Clutch Review" className="clutch-img" />
                     </div>
                 </div>
-            </section>
+
+                <div className="team-grid">
+                    <div className="team-member-card col-1">
+                        <h5 className="member-dept">CREATIVE</h5>
+                        <div className="member-image-wrapper">
+                            <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/teamMember-rlepr0frtjlv8fkw9opua2adqd8hqtc4uv73mijtzc.png" alt="Ava Mitchell" />
+                        </div>
+                        <h4 className="member-name">Ava Mitchell</h4>
+                        <p className="member-role">Creative Director</p>
+                        <p className="member-handle">@avamt</p>
+                    </div>
+
+                    <div className="team-member-card col-2 row-1">
+                        <h5 className="member-dept">DESIGN</h5>
+                        <div className="member-image-wrapper">
+                            <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/teamMember02-rlepr0frtjlv8fkw9opua2adqd8hqtc4uv73mijtzc.png" alt="Daniel Reyes" />
+                        </div>
+                        <h4 className="member-name">Daniel Reyes</h4>
+                        <p className="member-role">UI/UX Designer</p>
+                        <p className="member-handle">@dreyes</p>
+                    </div>
+
+                    <div className="team-member-card col-3 row-1">
+                        <h5 className="member-dept">STRATEGY</h5>
+                        <div className="member-image-wrapper">
+                            <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/teamMember03-rlepr0frtjlv8fkw9opua2adqd8hqtc4uv73mijtzc.png" alt="Mia Chen" />
+                        </div>
+                        <h4 className="member-name">Mia Chen</h4>
+                        <p className="member-role">Brand Strategist</p>
+                        <p className="member-handle">@miamia</p>
+                    </div>
+
+                    <div className="team-member-card col-2 row-2">
+                        <h5 className="member-dept">DEVELOPMENT</h5>
+                        <div className="member-image-wrapper">
+                            <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/teammember05-rlepr0frtjlv8fkw9opua2adqd8hqtc4uv73mijtzc.png" alt="Lucas Nguyen" />
+                        </div>
+                        <h4 className="member-name">Lucas Nguyen</h4>
+                        <p className="member-role">Front-End Developer</p>
+                        <p className="member-handle">@lucasng</p>
+                    </div>
+
+                    <div className="team-member-card col-3 row-2">
+                        <h5 className="member-dept">MANAGER</h5>
+                        <div className="member-image-wrapper">
+                            <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/teamMember06-rlepr0frtjlv8fkw9opua2adqd8hqtc4uv73mijtzc.png" alt="Sofia Ramirez" />
+                        </div>
+                        <h4 className="member-name">Sofia Ramirez</h4>
+                        <p className="member-role">Operations Manager</p>
+                        <p className="member-handle">@rsofi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
             <section className="process-section">
                 <div className="process-container">
                     <div className="process-header">
@@ -653,6 +654,75 @@ const Home = () => {
                     </div>
                 </div>
             </section >
+            <section className="contact-section">
+                <div className="bg-contact-text">
+                    <img src="https://demo.7iquid.com/lighter/wp-content/uploads/2025/12/Contact.png" alt="Contact Background" />
+                </div>
+                <div className="contact-container">
+                    <button className="section-btn">
+                        <span className="dot"></span> Contact
+                    </button>
+                    <h2 className="contact-heading">
+                        Ready to Start Your<br />Next Project?
+                    </h2>
+                    <div className="contact-form-wrapper">
+                        <input type="email" placeholder="Enter your e-mail" />
+                        <button className="submit-btn">Submit</button>
+                    </div>
+                </div>
+            </section>
+            <section className="blog-section">
+                <div className="blog-container">
+                    <div className="blog-card">
+                        <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/Design-That-Speaks-How-Visual-Identity-Shapes-Perception-rlepr0fveh7jef4du27u0vvc7dk0d7yqrabsyis1aw.avif" alt="Blog 1" className="blog-bg-image" />
+                        <div className="blog-overlay">
+                            <h3>Design That Speaks: How Visual Identity Shapes Perception</h3>
+                            <div className="blog-meta">
+                                <span>November 26, 2025</span>
+                                <span className="meta-square"></span>
+                                <span>Brand Culture</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="blog-card">
+                        <img src="https://demo.7iquid.com/lighter/wp-content/uploads/elementor/thumbs/From-Interface-to-Experience-The-Power-of-Thoughtful-UX-rlepr0fveh7jef4du27u0vvc7dk0d7yqrabsyis1aw.avif" alt="Blog 2" className="blog-bg-image" />
+                        <div className="blog-overlay">
+                            <h3>From Interface to Experience: The Power of Thoughtful UX</h3>
+                            <div className="blog-meta">
+                                <span>November 21, 2025</span>
+                                <span className="meta-square"></span>
+                                <span>Design Thinking</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="crafting-section">
+            <div className="crafting-bg">
+                <img src="https://demo.7iquid.com/lighter/wp-content/uploads/2025/11/glass-logo.png" alt="Lighter Background" />
+            </div>
+            
+            <div className="crafting-container">
+                <h1 className="crafting-title">Let’s Crafting</h1>
+                
+                <div className="visual-wrapper">
+                    <div className="glass-pill">
+                        <h2 className="visual-text">Visual Impact</h2>
+                    </div>
+                    
+                    <div className="floating-item cursor-left">
+                        <img src="https://demo.7iquid.com/lighter/wp-content/uploads/2025/11/FooterImage01.png" alt="Cursor Left" />
+                    </div>
+                    <div className="floating-item cursor-right">
+                        <img src="https://demo.7iquid.com/lighter/wp-content/uploads/2025/11/FooterImage02.png" alt="Cursor Right" />
+                    </div>
+                </div>
+                
+                <div className="btn-wrapper">
+                    <button className="start-btn">Start a Project</button>
+                </div>
+            </div>
+        </section>
         </>
     );
 };
