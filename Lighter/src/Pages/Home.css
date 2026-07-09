@@ -1110,6 +1110,22 @@
     margin: 0;
 }
 
+@media (max-width: 1200px) {
+    .col-1 {
+        margin-left: 0;
+        padding-right: 20px;
+    }
+    .col-2 {
+        padding-left: 30px;
+        padding-right: 20px;
+        border-left: 1px solid #e6e6ea;
+    }
+    .col-3 {
+        padding-left: 30px;
+        border-left: 1px solid #e6e6ea;
+    }
+}
+
 @media (max-width: 992px) {
     .team-top-row {
         flex-direction: column;
@@ -1126,17 +1142,41 @@
     }
     
     .team-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         row-gap: 50px;
+        column-gap: 30px;
     }
     
     .team-member-card {
-        grid-column: 1 !important;
+        grid-column: auto !important;
         grid-row: auto !important;
-        padding: 0 !important;
+        padding: 0 15px !important;
+        margin-left: 0 !important;
         border-left: none !important;
+        border-right: none !important;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .stats-number {
+        font-size: 110px;
+    }
+}
+
+@media (max-width: 600px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+
+    .team-member-card {
         align-items: center;
         text-align: center;
+        padding: 0 !important;
+    }
+
+    .stats-number {
+        font-size: 80px;
     }
 }
 
@@ -1874,5 +1914,183 @@
     .badge-impactful {
         right: -80px;
         width: 90px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+    .hero-right-content {
+        align-items: center;
+    }
+    .building-rating {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        justify-items: center;
+        text-align: center;
+    }
+    .rating-img {
+        grid-column: 1; grid-row: 1;
+    }
+    .rating-start {
+        grid-column: 1; grid-row: 2; align-self: center;
+    }
+    .review {
+        grid-column: 1; grid-row: 3; align-self: center;
+    }
+    .hero-description {
+        grid-column: 1; grid-row: 4;
+    }
+    .background-img {
+        display: none;
+    }
+    .mission-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .mission-one {
+        position: relative;
+        top: 0;
+        align-items: center;
+    }
+    .mission-heading {
+        text-align: center !important;
+    }
+    .heading-inline {
+        justify-content: center;
+    }
+    .mission-two {
+        width: 100%;
+    }
+    .process-header {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+    }
+    .team-top-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    .big {
+        font-size: 60px;
+    }
+    .Product-big {
+        font-size: 50px;
+    }
+    .mission-two {
+        grid-template-columns: 1fr;
+    }
+    .mission-card:nth-child(even) {
+        margin-top: 0;
+    }
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+    .work-bottom {
+        flex-direction: column;
+    }
+    .work-info {
+        border-right: none;
+        border-bottom: 2px solid #e1e1e6;
+        padding-right: 0;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .contact-heading {
+        font-size: 42px;
+    }
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+    .swiper-img-wrapper {
+        height: 400px;
+    }
+    .swiper-info-panel {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 20px;
+        bottom: -20px;
+        width: 90%;
+        left: 5%;
+    }
+    .portfolio-swiper {
+        padding-bottom: 50px;
+    }
+    .award-row {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .award-name, .award-detail, .award-date {
+        text-align: center;
+    }
+    .diagonal-gallery-section {
+        display: none; 
+    }
+}
+
+@media (max-width: 576px) {
+    .big {
+        font-size: 40px;
+    }
+    .Product-big {
+        font-size: 32px;
+    }
+    .mission-heading h2 {
+        font-size: 32px;
+    }
+    .stats-number {
+        font-size: 100px;
+    }
+    .process-heading h2 {
+        font-size: 40px;
+    }
+    .work-text h3 {
+        font-size: 28px;
+    }
+    .contact-heading {
+        font-size: 32px;
+    }
+    .crafting-title {
+        font-size: 40px;
+    }
+    .visual-text {
+        font-size: 35px;
+    }
+    .hero-container,
+    .mission-container,
+    .portfolio-container,
+    .team-container,
+    .process-container,
+    .working-container,
+    .blog-container,
+    .contact-container,
+    .crafting-container {
+        padding: 0 20px;
+    }
+    .contact-form-wrapper {
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 20px;
+        gap: 15px;
+    }
+    .submit-btn {
+        width: 100%;
+    }
+    .creative,
+    .cursor-img,
+    .node {
+        display: none;
     }
 }

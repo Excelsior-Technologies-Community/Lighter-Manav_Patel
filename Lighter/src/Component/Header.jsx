@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 
 const Header = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     return (
         <>
             <header className="header-one">
                 <div className="header-content">
                     <div className="one-icon">
-                        <i class="fa-solid fa-circle"></i>
+                        <i className="fa-solid fa-circle"></i>
                     </div>
                     <div className="one-text">
                         <h3>We Are Available For New Project</h3>
@@ -44,10 +46,46 @@ const Header = () => {
                     <div className="header-btn">
                         <button>Start a Project</button>
                     </div>
+
+                    <div className="mobile-toggle" onClick={() => setIsMenuOpen(true)}>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="15" y1="3" x2="15" y2="21"></line>
+                        </svg>
+                    </div>
                 </div>
             </header>
-        </>
 
+            <div className={`mobile-drawer-overlay ${isMenuOpen ? "open" : ""}`} onClick={() => setIsMenuOpen(false)}></div>
+            <div className={`mobile-drawer ${isMenuOpen ? "open" : ""}`}>
+                <div className="drawer-header">
+                    <h2>Menu</h2>
+                    <button className="drawer-close" onClick={() => setIsMenuOpen(false)}>Close</button>
+                </div>
+                <div className="drawer-content">
+                    <div className="drawer-item">
+                        <span>Home</span>
+                        <span className="drawer-plus">+</span>
+                    </div>
+                    <div className="drawer-item active">
+                        <span>About</span>
+                    </div>
+                    <div className="drawer-item">
+                        <span>Services</span>
+                    </div>
+                    <div className="drawer-item">
+                        <span>Works</span>
+                        <span className="drawer-plus">+</span>
+                    </div>
+                    <div className="drawer-item">
+                        <span>Pricing</span>
+                    </div>
+                    <div className="drawer-item">
+                        <span>Blog</span>
+                    </div>
+                </div>
+            </div>
+        </>
     );
 };
 
