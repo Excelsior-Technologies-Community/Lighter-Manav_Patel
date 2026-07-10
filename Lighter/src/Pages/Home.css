@@ -1165,14 +1165,37 @@
 
 @media (max-width: 600px) {
     .team-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         row-gap: 40px;
+        column-gap: 15px;
     }
 
     .team-member-card {
-        align-items: center;
-        text-align: center;
+        align-items: flex-start;
+        text-align: left;
         padding: 0 !important;
+    }
+    
+    .member-image-wrapper {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1.1;
+        margin-bottom: 15px;
+        border-radius: 16px;
+    }
+
+    .member-dept {
+        margin: 0 0 10px 0;
+        font-size: 10px;
+    }
+    
+    .member-name {
+        font-size: 16px;
+    }
+
+    .member-role,
+    .member-handle {
+        font-size: 12px;
     }
 
     .stats-number {
@@ -2012,21 +2035,7 @@
     .blog-container {
         grid-template-columns: 1fr;
     }
-    .swiper-img-wrapper {
-        height: 400px;
-    }
-    .swiper-info-panel {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-        padding: 20px;
-        bottom: -20px;
-        width: 90%;
-        left: 5%;
-    }
-    .portfolio-swiper {
-        padding-bottom: 50px;
-    }
+
     .award-row {
         flex-direction: column;
         gap: 15px;
@@ -2035,9 +2044,7 @@
     .award-name, .award-detail, .award-date {
         text-align: center;
     }
-    .diagonal-gallery-section {
-        display: none; 
-    }
+    
 }
 
 @media (max-width: 576px) {
@@ -2092,5 +2099,63 @@
     .cursor-img,
     .node {
         display: none;
+    }
+    .swiper-card {
+        padding: 15px;
+    }
+    .swiper-img-wrapper {
+        height: 220px;
+        border-radius: 16px;
+    }
+    .swiper-info-panel {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 25px 5px 10px 5px;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        box-shadow: none;
+        gap: 15px;
+        background: transparent;
+    }
+    .heading-col h3 {
+        font-size: 28px;
+    }
+    .portfolio-swiper {
+        padding-bottom: 20px;
+    }
+    .portfolio-swiper .swiper-button-prev,
+    .portfolio-swiper .swiper-button-next {
+        top: 125px;
+    }
+    .portfolio-swiper .swiper-button-prev {
+        left: 20px;
+    }
+    .portfolio-swiper .swiper-button-next {
+        right: 20px;
+    }
+    .portfolio-swiper .swiper-button-prev::after,
+    .portfolio-swiper .swiper-button-next::after {
+        font-size: 24px;
+    }
+    .diagonal-gallery-section {
+        height: 65vh;
+    }
+    .gallery-tilt-wrapper {
+        gap: 15px;
+        transform: rotate(-25deg) scale(1.1);
+    }
+    .gallery-column {
+        width: 160px;
+        gap: 15px;
+    }
+    .gallery-item {
+        height: 180px;
+        border: 4px solid #ffffff;
+    }
+    .gallery-item.tall {
+        height: 250px;
     }
 }
